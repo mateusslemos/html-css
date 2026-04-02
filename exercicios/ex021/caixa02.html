@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 13px;
+        }
+        nav {
+            background-color: gray;
+            padding: 5px;
+            box-shadow: inset 1px 5px 20px 7px rgba(0, 0, 0, 0.438);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 13px;
+            box-shadow: 5px 2px 9px 0px black;
+        }
+        section > p {
+            margin: 10px;
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: gray;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 100%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+            <p>Notícias do momento</p>
+            <article>
+                <h2>Notícia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsa illo vel sequi hic veniam sed earum quibusdam harum? Iste placeat voluptas maxime commodi rem tempora nostrum accusantium quas dolores?</p>
+                <aside>Artigo escrito por #</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por #
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

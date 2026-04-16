@@ -1,12 +1,116 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Playpen+Sans+Deva:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playpen+Sans+Deva:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
 
-body {
-    background-color: aliceblue;
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", cursive;
+    --fonte3: Sriracha, cursive;
+}
+
+html, body {
+    background-color: darkgrey;
     border: 3px solid black;
+    min-width: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fonte2);
+    font-weight: bold;
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header p {
+    font-family: var(--fonte1);
+    padding-bottom: 50px;
+}
+
+/* main pre {
+    font-family: var(--fonte3);
+    font-size: 3em;
+    font-style: italic;
+    text-align: justify;
+    line-height: 2em;
+    width: 600px;
+    padding-top: 2em;
+    padding-left: 30px;
+    padding-bottom: 2em;
+    white-space: pre-line;
+} */
+
+section {
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+pre {
+    font-family: var(--fonte3);
+    white-space: pre-line;
+    font-size: 1em;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(34, 34, 34);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.imagem > pre {
+    background-color: rgba(0, 0, 0, 0.623);
+    display: inline-block;
+    padding: 10px;
+}
+
+section#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    
+    
+}
+
+section#img02 {
+    background-image: url("../imagens/background002.jpg");
+}
+
+footer {
+    font-family: var(--fonte1);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

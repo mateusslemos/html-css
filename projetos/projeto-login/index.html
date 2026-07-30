@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                Foto
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a)! Faça login para acessar sua conta.</p>
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" required maxlength="22">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined">lock_person</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci meu email
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>

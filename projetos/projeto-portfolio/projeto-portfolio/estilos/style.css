@@ -25,6 +25,15 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #33333;
+  --destaque: #3d5affc7;
+  --destaque-inverso: #a6a0ff;
+  --fundo-card: #444444;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
@@ -289,6 +298,10 @@ footer a:hover {
 
   section#detalhes {
     grid-column: 3 / 4;
+  }
+
+  section#detalhes .video-container {
+    width: 70%;
   }
 
   #skill-container {

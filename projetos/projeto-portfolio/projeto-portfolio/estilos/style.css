@@ -28,8 +28,8 @@
 body.escuro {
   --fundo-principal: #222222;
   --texto: #e0e0e0;
-  --texto-inverso: #33333;
-  --destaque: #3d5affc7;
+  --texto-inverso: #e0e0e0;
+  --destaque: #3d5aff;
   --destaque-inverso: #a6a0ff;
   --fundo-card: #444444;
 }
